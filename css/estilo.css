@@ -3,6 +3,7 @@ li{
     display: inline-block;  
 }
 
+/*se llama la clase para colocar las propiedades y valores a la clase global del modulo de claro y noche */
 .switchDark{
     background-color: #3494b1;
     display: flex;
@@ -15,11 +16,14 @@ li{
     justify-content: space-between;
 }
 
+/*se llama la clase para colocar otro color cuando el usuario pase el cursor*/
+
 .switchDark:hover{
     background-color:#68CEFA;
 }
 
-
+/*se llama la clase global*/
+/*se llama un selector span para referirnos al elemento que le vamos a colocar propiedades*/
 .switchDark span{
     width: 30px;
     height: 30px;
@@ -28,6 +32,8 @@ li{
     color: #fff;
     background: none;
 }
+
+/*se llama la clase y se le coloca un seudoelemento para que actue despues de ese elemento*/
 .switchDark::after{
     display: block;
     background: #fffbf5;
@@ -42,6 +48,7 @@ li{
     box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
     content: "";
 }
+
 .switchDark.active{
     background:#F6E217;
 }
@@ -62,11 +69,66 @@ body.dark{
     color: #fff;
 }
 
+
 /*Seccion de la calculadora */
 
-.calculadora{
-    display: grid;
-    justify-content: center;
-    align-content: center;
+/*centrar la calculadora*/
+body{
+    margin:0;
+    padding: 0;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/*se coloca el color de fondo de la calculadora*/
+
+#contenedor_calculadora{
+    font-size: 150%;
+    background-color: #3494b1;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/*se llama el identificador de la caja de texto*/
+#result{
+    display:block;
+    margin:0 auto;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    width: 90px;
+    height: 20px;
+}
+
+/*Se llama el identificador de operaciones para colocar los elementos de division*/
+
+
+inpuṭ[type="button"]{
+    display:block;
+    text-align: center;
+    margin: 3px;
+    border:none;
+    cursor:pointer;
+}
+
+/*se llama la clase de color1 para colocar un color naranja*/
+.color1{
+    background-color: #F69117;
+    border:none;
+}
+
+/*se llama a la clase color1 para colocar otro color cuando el usuario le de clic le salga otro color*/
+.color1:hover{
+    background-color: #D50600;
+}
+
+/*se llama la clase Diferent esta clase se refiere a los botones que tiene las operaciones basicas */
+/*En esta clase se coloca una propiedad para que le de color a los botones  de operacion*/
+.Diferent{
+    background-color: #F69117;
+    border:none;
+}
+

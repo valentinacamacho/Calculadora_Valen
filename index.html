@@ -12,41 +12,42 @@
 <body>
 
 <!--En este caso se coloco una lista para contener los elementos de desarrollo de los iconos-->
-<!-- <li>
+<li>
         <button class="switchDark active" id="switch">
         <span><i class='bx bx-sun'></i></span>
         <span><i class='bx bx-moon'></i></span>
-    </li>-->
+    </li>
 
-    <div class="calculadora">
+    <!---Se coloca una clase global para la calculadora -->
+    <div id="contenedor_calculadora">
         <!---Se coloca una caja de texto para tomar el valor de la calculadora-->
-        <input type="text" id="result" placeholder="0">
-        
+        <div class="operaciones">
+            <input type="text" id="result" placeholder="0">
+        </div>
+        <br>
         <!---Se agrega los elementos de boton para la calculadora-->
-       <input type="button" value="1">
-       <input type="button" value="2">
-       <input type="button" value="3">
-       <input type="button" value="+">
-       <br>
-       <input type="button" value="4">
-       <input type="button" value="5">
-       <input type="button" value="6">
-       <input type="button" value="-">
-       <br>
-       <input type="button" value="7">
-       <input type="button" value="8">
-       <input type="button" value="9">
-       <input type="button" value="/">
-       <br>
-       <input type="button" value="C">
-       <input type="button" value="0">
-       <input type="button" value="=">
-       <input type="button" value="&times;">
-
-
-     </div>
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input class="Diferent" type="button" value="+">
+        <br>
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input class="Diferent" type="button" value="-">
+        <br>
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        <input class="Diferent" type="button" value="/">
+        <br>
+        <input class="color1" type="button" value="C">
+        <input type="button" value="0">
+        <input class="color2"type="button" value="=">
+        <input class="Diferent" type="button" value="&times;">
+    </div>
 
 <!---Se colca el elemento script para llamar el documento de javascript llamado en este caso script.js-->
     <script type="text/javascript" src="script.js"></script>
 </body>
-</ht>
+</htmls>
