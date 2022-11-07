@@ -1,3 +1,5 @@
+
+
 /*Seccion de modo oscuro y claro*/
 li{
     display: inline-block;  
@@ -5,15 +7,19 @@ li{
 
 /*se llama la clase para colocar las propiedades y valores a la clase global del modulo de claro y noche */
 .switchDark{
-    background-color: #3494b1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #20aad4;
     display: flex;
     position: relative;
+    left: 600px;
     cursor: pointer;
     outline: none;
     border: none;
     border-radius: 1rem;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 800px;
 }
 
 /*se llama la clase para colocar otro color cuando el usuario pase el cursor*/
@@ -69,55 +75,78 @@ body.dark{
     color: #fff;
 }
 
-
-/*Seccion de la calculadora */
-
-/*centrar la calculadora*/
+/*centrar posiciones */
 body{
     margin:0;
     padding: 0;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*Seccion de la calculadora */
+
+/*se coloca propiedades y valor en la imagen*/
+.mons{
+    position: absolute;
+    width:"800px";
 }
 
 /*se coloca el color de fondo de la calculadora*/
 
 #contenedor_calculadora{
-    font-size: 150%;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: minmax(10px, auto) repeat(5, 50px);
+    position: absolute;
+    margin: 40px;
     background-color: #3494b1;
-    padding: 20px;
     border-radius: 10px;
-    
+    transform: translate(0%);
+}
+
+#contenedor_calculadora button{
+    cursor:pointer;
+    font-size: 2rem;
+    border:1px solid white;
+    outline:none;
+}
+
+.operaciones{
+grid-column: 1/-1;
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+
+@media(max-width:768px){
+    #contenedor_calculadora {
+        flex-direction: column;
+    }
+
 }
 
 /*se llama el identificador de la caja de texto*/
-#result{
-    display:block;
+/*#result{
     margin:0 auto;
     border-radius: 10px;
     border:none;
-    padding: 10px;
-    width: 90px;
+    padding: 20px;
+    width: 170px;
     height: 20px;
-}
-
-/*Se llama el identificador de operaciones para colocar los elementos de division*/
-
-
-inpuṭ[type="button"]{
-    display:block;
-    text-align: center;
-    margin: 3px;
-    border:none;
-    cursor:pointer;
-}
+    text-align: right;
+}*/
 
 /*se llama la clase de color1 para colocar un color naranja*/
 .color1{
     background-color: #F69117;
-    border:none;
 }
 
 /*se llama a la clase color1 para colocar otro color cuando el usuario le de clic le salga otro color*/
@@ -129,6 +158,5 @@ inpuṭ[type="button"]{
 /*En esta clase se coloca una propiedad para que le de color a los botones  de operacion*/
 .Diferent{
     background-color: #F69117;
-    border:none;
 }
 
