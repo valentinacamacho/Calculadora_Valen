@@ -136,6 +136,7 @@ body.dark{
     background-color:rgb(255, 255, 255);
     /*debe tener un borde de 20 pixelex semi redondo*/
     border-radius: 20px;
+    overflow-y: scroll;
 }
 
 @media screen and (max-width: 320px){

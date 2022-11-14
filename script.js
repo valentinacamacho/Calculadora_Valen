@@ -180,3 +180,21 @@ reset.onclick = function(e){
     /*va a resetear el contenido en el bloque */
     resetear();
 }
+
+/*se crea una funcion limpiar*/
+/*en este caso llama al metodo que tenga limpiar */
+function limpiar(){
+    /*no traera ningun digito porque limpia el contenido */
+    resultado.textContent = "";
+}
+
+/*se crea la funcion a restablecer el bloque */
+function resetear(){
+    //llama la variable resultado que sea igual a que tenga un valor nullo
+    resultado.textContent = "";
+    //se llama las variables operandoa,b y operacion que contenga un valor nullo
+    operandoa = 0;
+    operandob = 0;
+    operacion = "";
+}
+
