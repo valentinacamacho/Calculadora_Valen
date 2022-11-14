@@ -133,3 +133,43 @@ suma.onclick = function(e){
     /*se limpia el contenido */
     limpiar();
 }
+
+/*se llama la variable resta que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton resta
+//cuando se hace clic en bloque aparece el operador
+resta.onclick = function(e){
+    operandoa = resultado.textContent;
+    operacion = "-";
+    limpiar();
+}
+/*se llama la variable multiplicacion que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton multiplicacion
+//cuando se hace clic en bloque aparece el operador
+multiplicacion.onclick = function(e){
+    operandoa = resultado.textContent;
+    operacion = "*";
+    limpiar();
+}
+/*se llama la variable division que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton division
+//cuando se hace clic en bloque aparece el operador
+division.onclick = function(e){
+    operandoa = resultado.textContent;
+    operacion = "/";
+    limpiar();
+}
+/*se llama la variable igual que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton igual
+//cuando se hace clic en bloque aparece el operador
+igual.onclick = function(e){
+    /*se llama la variable operandoa */
+    /*esta variable debe ser igual a la variable resultado que sea el contenido texto */
+    operandob = resultado.textContent;
+    /*debe resolver la operacion en cuanto los operadores aritmeticos */
+    resolver();
+}
+
