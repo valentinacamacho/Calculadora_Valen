@@ -12,8 +12,8 @@ li{
     background-color: #20aad4;
     display: flex;
     position: relative;
-    left: 600px;
-    cursor: pointer;
+   /* left: 600px;*/    
+   cursor: pointer;
     outline: none;
     border: none;
     border-radius: 1rem;
@@ -79,19 +79,9 @@ body.dark{
 body{
     padding: 0;
     margin:0;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: aqua;
 }
 /*Seccion de la calculadora */
-
-/*se coloca propiedades y valor en la imagen*/
-.mons{
-    position: absolute;
-    width:800px;
-    margin-top: 40px;
-}
 
 /*se coloca el color de fondo de la calculadora*/
 
@@ -99,68 +89,46 @@ body{
     display:grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4,50px);
-    grid-template-rows: minmax(10px, auto) repeat(5, 50px);
-    position: absolute;
+    width: 100px;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     border-radius: 10px;
-    /*transform: translate(-40%);*/
 }
 
-.contenedor_calculadora button{
+.contenedor_calculadora > button{
     cursor:pointer;
     font-size: 2rem;
-    border:1px solid rgb(233, 15, 15);
+    border:1px solid;
     outline:none;
 }
 
 .operaciones{
-grid-column: 1/-1;
+grid-column: 1 / -1;
 background-color: rgb(255, 255, 255);
 display: flex;
 align-items: flex-end;
 justify-content: space-around;
 flex-direction: column;
+padding: 10px;
 word-wrap: break-word;
 word-break: break-all;
-}
-
-
-@media(max-width:768px){
-    #contenedor_calculadora {
-        flex-direction: column;
-    }
 
 }
 
-.result .display{
-    
-}
 
 /*se llama el identificador de la caja de texto*/
-/*#result{
+#result{
     margin:0 auto;
-    border-radius: 10px;
     border:none;
-    padding: 20px;
-    width: 170px;
+    padding: 10px;
+    width: 176px;
     height: 20px;
     text-align: right;
-}*/
+}
 
 /*se llama la clase de color1 para colocar un color naranja*/
 .color1{
     background-color: #F69117;
 }
 
-/*se llama a la clase color1 para colocar otro color cuando el usuario le de clic le salga otro color*/
-.color1:hover{
-    background-color: #D50600;
-}
-
-/*se llama la clase Diferent esta clase se refiere a los botones que tiene las operaciones basicas */
-/*En esta clase se coloca una propiedad para que le de color a los botones  de operacion*/
-.Diferent{
-    background-color: #F69117;
-}
 

@@ -8,12 +8,19 @@ switchButton.addEventListener('click',()=>{
 /*Aqui va la seccion de javascript funcion a la calculadora*/
 
 /*Se declaran las variables constantes*/
-/* se llama los elemeentos de name de html a el documento js*/
+/* se llama los elementos de name de html a el documento js*/
 /*se coloca un argumento al boton delete para que borre todo */
+/*se manipula los elementos al dom para colcar funcionalidad */
+
+
 const botonees=document.getElementsByName('number');
-const botonoperacion=document.getElementsByName('operacion'); 
+const botonoperacion=document.getElementsByName('botonesoper'); 
 const botonigual=document.getElementsByName('igual')[0];
 const botondelete=document.getElementsByName('delete')[0];
+
+const boton1=document.getElementById('delete1');
+document.getElementById('delete')=boton1.substring(0,boton1.length-1);
+
 var result= document.getElementById('result');
 var operActual='';
 var operanterior='';
