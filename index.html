@@ -13,15 +13,131 @@
 <!--Esta funcion la llaman con init()-->
 <body onload="init();">
 
-<!--En este caso se coloco una lista para contener los elementos de desarrollo de los iconos-->
-    <li>
-        <button class="switchDark active" id="switch">
-        <span><i class='bx bx-sun'></i></span>
-        <span><i class='bx bx-moon'></i></span>
-    </li>
+        <!--En este caso se coloco una lista para contener los elementos de desarrollo de los iconos-->
+        <li>
+            <button class="switchDark active" id="switch">
+            <span><i class='bx bx-sun'></i></span>
+            <span><i class='bx bx-moon'></i></span>
+        </li>
 
+        <!--creacion de botones con tablas en donde se define con  columnas y filas-->    
+        <table class="calculadora">
+            <tr>
+                <!--El elemento td  define la celda de la tabla-->
+                <!--El atributo colspan define celdas consecutivas de una misma fila-->
+                <td colspan="4">
+                    <span id="resultado">
+                </span></td>
+            </tr>
+            <!--creacion de cada columna y fila dentro de ellas se creo  los botones -->
+            <tr>
+                <td>
+                    <!--se creo el primer boton -->
+                    <!--se creo el id con referencia numero 1 -->
+                    <button id="uno">1</button>
+                </td>
+                <td>
+                    <!--se creo el segundo boton -->
+                    <!--se creo el id con referencia numero 2 -->
+                    <button id="dos">2</button>
+                </td>
+                <td>
+                    <!--se creo el tercer boton -->
+                    <!--se creo el id con referencia numero 3 -->
+                    <button id="tres">3</button>
+                </td>
+                <td>
+                    <!--se creo el de suma boton -->
+                    <!--se creo el id con referencia suma -->
+                    <button id="suma">+</button>
+                </td>
+            </tr>
 
+            <tr>
+                <td>
+                    <!--se creo el cuarto boton -->
+                    <!--se creo el id con referencia numero 4-->
+                    <button id="cuatro">4</button>
+                </td>
+                <td>
+                    <!--se creo el quinto boton -->
+                    <!--se creo el id con referencia numero 5-->
+                    <button id="cinco">5</button>
+                </td>
+                <td>
+                    <!--se creo el sexto boton -->
+                    <!--se creo el id con referencia numero 6-->
+                    <button id="seis">6</button>
+                </td>
+                <td>
+                    <!--se creo el boton de resta -->
+                    <!--se creo el id con referencia resta-->
+                    <button id="resta">-</button>
+                </td>
+            </tr>
 
+            <tr>
+                <td>
+                    <!--se creo el septimo boton -->
+                    <!--se creo el id con referencia numero 7-->
+                    <button id="siete">7</button>
+                </td>
+                <td>
+                    <!--se creo el octavo boton -->
+                    <!--se creo el id con referencia numero 8-->
+                    <button id="ocho">8</button>
+                </td>
+                <td>
+                    <!--se creo el noveno boton -->
+                    <!--se creo el id con referencia numero 9-->
+                    <button id="nueve">9</button>
+                </td>
+                <td>
+                    <!--se creo el boton de division-->
+                    <!--se creo el id con referencia division-->
+                    <button id="division">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--se creo el boton del cero-->
+                    <!--se creo el id con referencia cero-->
+                    <button id="cero">0</button>
+                </td>
+                <td>
+                    <!--se creo el boton de la coma-->
+                    <!--se creo el id con referencia coma-->
+                    <button id="coma">,</button>
+                </td>
+                <td>
+                    <!--se creo el boton del punto-->
+                    <!--se creo el id con referencia punto-->
+                    <button id="punto">.</button>
+                </td>
+                <td>
+                    <!--se creo el boton de multiplicacion-->
+                    <!--se creo el id con referencia multiplicacion-->
+                    <button id="multiplicacion">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--se creo el boton de igual-->
+                    <!--se creo el id con referencia igual-->
+                    <button id="igual">=</button>
+                </td>
+                <td>
+                    <!--se creo el boton de eliminar todo el contenido de la caja de texto-->
+                    <!--se creo el id con referencia reset-->
+                    <button id="reset">C</button>
+                </td>
+                <td>
+                    <!--se creo el boton de  eliminar un solo digito-->
+                    <!--se creo el id con referencia eliminar-->
+                    <button id="eliminarE">E</button>
+                </td>
+            </tr>
+    </table>
 
 <!---Se colca el elemento script para llamar el documento de javascript llamado en este caso script.js-->
     <script type="text/javascript" src="script.js"></script>
