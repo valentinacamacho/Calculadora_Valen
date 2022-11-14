@@ -198,3 +198,29 @@ function resetear(){
     operacion = "";
 }
 
+function resolver(){
+    var res = 0;
+    /*esta sentencia permite manipular el comportamiento de los bucles en este caso se hizo en eñ bucle switch */
+    /*llama la operacion que contiene el valor de los botones */
+    switch(operacion){
+        case "+"://selecciona el operador suma
+        /*la variable res contiene la operacion */
+        /*parsefloat es que acepte tipo de dato decimal */
+        /*el operandoa toma el valor 1 ingresado */
+        /* el operandob toma el valor 2 ingresado */
+            res = parseFloat(operandoa) + parseFloat(operandob); //valor 1 + valor 1 = a resultado 
+            break;//permite que la sentecia continue
+        case "-"://selecciona el operador resta
+            res = parseFloat(operandoa) - parseFloat(operandob); //valor 1 - valor 1 = a resultado 
+            break;//permite que la sentecia continue
+        case "*"://selecciona el operador multiplicacion
+            res = parseFloat(operandoa) * parseFloat(operandob);// valor 1 * valor 2 = a resultado
+            break;//permite que la sentecia continue
+        case "/"://selecciona el operador division
+        res = parseFloat(operandoa) / parseFloat(operandob);// valor 1 / valor 2 = a resultado
+        break;//permite que la sentecia continue
+    }
+    //llama al metodo resetear el resultado que sea a las variable res 
+    resetear();
+    resultado.textContent = res;
+}
