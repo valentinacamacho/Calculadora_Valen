@@ -15,14 +15,23 @@ var operacion;
 /*se declara la funcion que se coloco en el body para inicializar cunado cargue la pagina*/
 function init(){
     //se declaran variables y se hace llamado al dom para que los botones tengan funcionalidad respecto al id por medio de HTML y queden gusrdados desde el dom
+    
+    /*se declara variable resultado para que salga en el bloque  */
     var resultado = document.getElementById('resultado');
+
+    /*Declaracion de variables con el dom para que elimine todo el contenido */
     var reset = document.getElementById('reset');
+    /*declaracion de variable que elimina por digito*/
     var elminarE=document.getElementById('eliminarE');
+
+    /*Declaracion de variable para los operadores aritmeticos */
     var suma = document.getElementById('suma');
     var resta = document.getElementById('resta');
     var multiplicacion = document.getElementById('multiplicacion');
     var division = document.getElementById('division');
     var igual = document.getElementById('igual');
+
+    /*declaracion de variables de los botones que contienen numeros */
     var uno = document.getElementById('uno');
     var dos = document.getElementById('dos');
     var tres = document.getElementById('tres');
@@ -107,4 +116,20 @@ nueve.onclick = function(e){
 //cuando se hace clic en bloque aparece el numero
 cero.onclick = function(e){
     resultado.textContent = resultado.textContent  + "0";
+}
+
+/*se llama las variables para crear eventos para los operadores aritmeticos  +,-,*,/  se muestren  en cuanto el usuario le de click*/
+
+/*se llama la variable suma que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton numero suma
+//cuando se hace clic en bloque aparece el operador
+suma.onclick = function(e){
+    /*se llama la variable principal operandoa */
+    /*el operandoa debe ser igual que resultado debe ser a texto del contenido */
+    operandoa = resultado.textContent;
+    /*se llama la variable operacion que sea igual a + */
+    operacion = "+";
+    /*se limpia el contenido */
+    limpiar();
 }
