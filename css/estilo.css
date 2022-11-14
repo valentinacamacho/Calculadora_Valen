@@ -77,7 +77,7 @@ body{
 /*se coloca selector especifico en el body de selector de diseño general*/
 body.dark{
     background: #222;
-    color: #fff;
+    color: #000;
 }
 
 
@@ -133,17 +133,18 @@ body.dark{
     /*un lineal de largo del 100px*/
     line-height: 100px;
     /*el bloque debe ser color blanco*/
-    background-color:#fff;
+    background-color:rgb(255, 255, 255);
     /*debe tener un borde de 20 pixelex semi redondo*/
     border-radius: 20px;
 }
 
-@media screen and (max: 320px){
+@media screen and (max-width: 320px){
     .calculadora td button{
         display:block;
         width:30px;
         height: 30px;
         font-size: 10px;
     }
+
     
 }
