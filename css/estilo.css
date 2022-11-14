@@ -100,3 +100,40 @@ body.dark{
     /*el borde del elemento va tener un 25px que debe ser redondo*/
     border-radius: 25px;
 }
+
+/*propiedades y valores de los botones*/
+/*se referencia los selectores que contienen los botones */
+/*se llama el selector de calculadora*/
+/*se llama los selectores de diseño que son las td y button*/
+.calculadora td button{
+    /*se coloca un bloque que contenga lo siguiente*/
+    display:block;
+    /*los botones debe tener un ancho de 50px mas pequeño*/
+    width:60px;
+    /*los botones debe tener un alto de 50px*/
+    height: 60px;
+    /*debe tener un tamaño de tipografia de 25px*/
+    font-size: 25px;
+}
+
+/*se llama el selector de id */
+#resultado{
+    /*se crea un bloque que contenga las siguientes propiedades*/
+    display:block;
+    /*el bloque debe estar centrado*/
+    text-align: center;
+    /*debe de tener un tamño de 40px*/
+    font-size: 40px;
+    /*debe de tener un espacio en la parte inferior de 20px*/
+    margin-bottom: 20px;
+    /*el bloque debe tener un 250 de ancho*/
+    width:250px;
+    /*el bloque debe tener un 100px de largo*/
+    height: 100px;
+    /*un lineal de largo del 100px*/
+    line-height: 100px;
+    /*el bloque debe ser color blanco*/
+    background-color:#fff;
+    /*debe tener un borde de 20 pixelex semi redondo*/
+    border-radius: 20px;
+}
