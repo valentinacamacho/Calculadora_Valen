@@ -173,3 +173,10 @@ igual.onclick = function(e){
     resolver();
 }
 
+/*se crea un evento de eliminar contenido en cuanto el usuario de click */
+//en este caso no va quedar ningun digito en el bloque
+//sigue teniendo el mismo argumento e 
+reset.onclick = function(e){
+    /*va a resetear el contenido en el bloque */
+    resetear();
+}
