@@ -36,3 +36,11 @@ function init(){
 }
 
 
+//se hace eventos por cada boton para que el usuario tenga interactualidad con el desarrollo
+
+//llama la variable uno que contiene el DOM 
+//se crea una funcion que contenga un argumento e
+//onclick ejecuta cierta funcionalidad cuando se hace clic en el boton de numero 1 
+uno.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "1";
+}
