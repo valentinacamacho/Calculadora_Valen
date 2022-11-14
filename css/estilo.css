@@ -12,8 +12,7 @@ li{
     background-color: #20aad4;
     display: flex;
     position: relative;
-   /* left: 600px;*/    
-   cursor: pointer;
+    cursor: pointer;
     outline: none;
     border: none;
     border-radius: 1rem;
@@ -55,80 +54,35 @@ li{
     content: "";
 }
 
+/*Al momento en que el usuario lo coloque modo claro el boton va hacer color yellow*/
 .switchDark.active{
     background:#F6E217;
 }
 
+/*Cuando el usuario pase el cursor se va poner de color naranja*/
 .switchDark.active:hover{
     background:#F69117;
 }
+/*el boton se va a correr*/
 .switchDark.active::after{
     left: unset;
     right: 0;
 }
+
+/*se coloca propiedades en body general*/
 body{
     background: #fff;
     color: #000;
 }
+
+/*se coloca selector especifico en el body de selector de diseño general*/
 body.dark{
     background: #222;
     color: #fff;
 }
 
-/*centrar posiciones */
-body{
-    padding: 0;
-    margin:0;
-    background-color: aqua;
-}
+
+
+
 /*Seccion de la calculadora */
-
-/*se coloca el color de fondo de la calculadora*/
-
-.contenedor_calculadora{
-    display:grid;
-    justify-content: center;
-    align-content: center;
-    width: 100px;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    border-radius: 10px;
-}
-
-.contenedor_calculadora > button{
-    cursor:pointer;
-    font-size: 2rem;
-    border:1px solid;
-    outline:none;
-}
-
-.operaciones{
-grid-column: 1 / -1;
-background-color: rgb(255, 255, 255);
-display: flex;
-align-items: flex-end;
-justify-content: space-around;
-flex-direction: column;
-padding: 10px;
-word-wrap: break-word;
-word-break: break-all;
-
-}
-
-
-/*se llama el identificador de la caja de texto*/
-#result{
-    margin:0 auto;
-    border:none;
-    padding: 10px;
-    width: 176px;
-    height: 20px;
-    text-align: right;
-}
-
-/*se llama la clase de color1 para colocar un color naranja*/
-.color1{
-    background-color: #F69117;
-}
-
 
