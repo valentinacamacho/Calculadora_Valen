@@ -18,7 +18,6 @@ li{
     border-radius: 1rem;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 800px;
 }
 
 /*se llama la clase para colocar otro color cuando el usuario pase el cursor*/
@@ -82,3 +81,22 @@ body.dark{
 }
 
 
+/*Propiedades y valores de la calculadora */
+/*se llama la clase de la calculadora */
+/*En donde nos dirige que propiedades y valores debe de tener la margen de la calculadora*/
+.calculadora{
+    /*la caja va a tener una forma dependiendo las propiedades y valores que lo componen*/
+    display:block;
+    /*va a tener un margen de cero*/
+    margin:0 auto;
+    /*va a tener un espacion de 20px*/
+    padding:20px;
+    /*va a tener un color azul*/
+    background-color:#2980b9;
+    /*va ha tener un ancho de 300px*/
+    width:300px;
+    /*va ha tener un largo de 500px*/
+    height:500px;
+    /*el borde del elemento va tener un 25px que debe ser redondo*/
+    border-radius: 25px;
+}
