@@ -7,12 +7,8 @@ switchButton.addEventListener('click',()=>{
 
 /*Aqui va la seccion de javascript funcion a la calculadora*/
 
-/*Se declaran las variables constantes*/
-/* se llama los elementos de name de html a el documento js*/
-/*se coloca un argumento al boton delete para que borre todo */
-/*se manipula los elementos al dom para colcar funcionalidad */
-
-
-
-
+/*se declaran variables*/
+var operandoa;
+var operandob;
+var operacion;
 

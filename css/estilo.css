@@ -137,3 +137,13 @@ body.dark{
     /*debe tener un borde de 20 pixelex semi redondo*/
     border-radius: 20px;
 }
+
+@media screen and (max: 320px){
+    .calculadora td button{
+        display:block;
+        width:30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+}
