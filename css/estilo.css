@@ -126,7 +126,7 @@ body.dark{
     /*se coloco un espacion de 20px al lado izquierdo*/
     padding-right:20px ;
     /*debe de tener un tamño de 40px*/
-    font-size: 40px;
+    font-size: 50px;
     /*debe de tener un espacio en la parte inferior de 20px*/
     margin-bottom: 20px;
     /*el bloque debe tener un 250 de ancho*/
@@ -139,6 +139,13 @@ body.dark{
     background-color:rgb(255, 255, 255);
     /*debe tener un borde de 20 pixelex semi redondo*/
     border-radius: 20px;
+
+    font-family: Digital-7-italic;
+}
+
+@font-face {
+    font-family:Digital-7-italic;
+    src: url(/css/letra1.ttf);
 }
 
 .color{
