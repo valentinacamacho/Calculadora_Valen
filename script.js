@@ -43,6 +43,9 @@ function init(){
     var nueve = document.getElementById('nueve');
     var cero = document.getElementById('cero');
 }
+        /*declaracion de variables de los botones que contiene signos de puntuacion */
+    var coma=document.getElementById('coma')
+    var punto=document.getElementById('punto')
 
 
 //se hace eventos por cada boton para que el usuario tenga interactualidad con el desarrollo
@@ -118,6 +121,21 @@ cero.onclick = function(e){
     resultado.textContent = resultado.textContent  + "0";
 }
 
+/*se llama la variable coma que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton puntos de asignacion
+//cuando se hace clic en bloque aparece la coma
+coma.onclick = function(e){
+    resultado.textContent = resultado.textContent  + ",";
+}
+/*se llama la variable punto que contiene el Dom */
+//se crea una funcion que tenga el argumento e
+//se crea el evento onclick que da cierta funcionalidad cuando se hace clic en el boton puntos de asignacion
+//cuando se hace clic en bloque aparece la punto
+punto.onclick = function(e){
+    resultado.textContent = resultado.textContent  + ".";
+}
+
 /*se llama las variables para crear eventos para los operadores aritmeticos  +,-,*,/  se muestren  en cuanto el usuario le de click*/
 
 /*se llama la variable suma que contiene el Dom */
@@ -181,6 +199,16 @@ reset.onclick = function(e){
     resetear();
 }
 
+eliminarE.onclick = function(e){
+    /*llama variable para que el usuario le de click al boton */
+    digito();
+}
+
+/*se crea una funcion llamando el metodo digito */
+function digito(){
+    resultado.textContent=reset.substring(0,reset.length - 1);
+}
+
 /*se crea una funcion limpiar*/
 /*en este caso llama al metodo que tenga limpiar */
 function limpiar(){
@@ -197,6 +225,7 @@ function resetear(){
     operandob = 0;
     operacion = "";
 }
+
 
 function resolver(){
     var res = 0;

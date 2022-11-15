@@ -78,6 +78,7 @@ body{
 body.dark{
     background: #222;
     color: #000;
+    background-image: url(/img/images.jpg);
 }
 
 
@@ -121,7 +122,9 @@ body.dark{
     /*se crea un bloque que contenga las siguientes propiedades*/
     display:block;
     /*el bloque debe estar centrado*/
-    text-align: center;
+    text-align: right;
+    /*se coloco un espacion de 20px al lado izquierdo*/
+    padding-right:20px ;
     /*debe de tener un tamño de 40px*/
     font-size: 40px;
     /*debe de tener un espacio en la parte inferior de 20px*/
@@ -138,12 +141,34 @@ body.dark{
     border-radius: 20px;
 }
 
+.color{
+    background-color: #F69117;
+}
+
+
 @media screen and (max-width: 320px){
     .calculadora td button{
         display:block;
-        width:30px;
-        height: 30px;
-        font-size: 10px;
+        width:50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .calculadora{
+        display:block;
+        padding:10px;
+        width:240px;
+        height:420px;
+        border-radius: 20px;
+    }
+
+    #resultado{
+        display:block;
+        font-size: 30px;
+        margin-bottom: 20px;
+        width:190px;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 20px;
     }
 
     
