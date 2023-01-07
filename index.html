@@ -14,11 +14,15 @@
 <body onload="init();">
 
         <!--En este caso se coloco una lista para contener los elementos de desarrollo de los iconos-->
+
         <li>
             <button class="switchDark active" id="switch">
             <span><i class='bx bx-sun'></i></span>
             <span><i class='bx bx-moon'></i></span>
         </li>
+
+
+     
 
         <!--creacion de botones con tablas en donde se define con  columnas y filas-->    
         <table class="calculadora">
@@ -104,16 +108,21 @@
                     <!--se creo el id con referencia cero-->
                     <button id="cero">0</button>
                 </td>
+        
                 <td>
-                    <!--se creo el boton de la coma-->
-                    <!--se creo el id con referencia coma-->
-                    <button id="coma">,</button>
+                    <!--se creo el boton de eliminar todo el contenido de la caja de texto-->
+                    <!--se creo el id con referencia reset-->
+                    <button  id="reset">C</button>
                 </td>
+
+          
+
                 <td>
-                    <!--se creo el boton del punto-->
-                    <!--se creo el id con referencia punto-->
-                    <button id="punto">.</button>
+                    <!--se creo el boton de  eliminar un solo digito-->
+                    <!--se creo el id con referencia eliminar-->
+                    <button id="eliminarE">E</button>
                 </td>
+
                 <td>
                     <!--se creo el boton de multiplicacion-->
                     <!--se creo el id con referencia multiplicacion-->
@@ -121,21 +130,15 @@
                 </td>
             </tr>
             <tr>
+
                 <td>
                     <!--se creo el boton de igual-->
                     <!--se creo el id con referencia igual-->
                     <button class="color" id="igual">=</button>
                 </td>
-                <td>
-                    <!--se creo el boton de eliminar todo el contenido de la caja de texto-->
-                    <!--se creo el id con referencia reset-->
-                    <button  id="reset">C</button>
-                </td>
-                <td>
-                    <!--se creo el boton de  eliminar un solo digito-->
-                    <!--se creo el id con referencia eliminar-->
-                    <button id="eliminarE">E</button>
-                </td>
+               
+            
+               
             </tr>
     </table>
 
